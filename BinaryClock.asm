@@ -49,7 +49,7 @@ CMP SI, 8
 JL fill_arrays             ;loop 8 times
 
 ;TODO : display loop
-MOV SI, 0
+MOV SI, 2
 MOV DH, 02d
 MOV DL, 22d
 tube_sec:
@@ -69,7 +69,7 @@ ADD DL, 4d
 CMP SI, 8
 JL tube_sec 
 ;minutes lights
-MOV SI, 0
+MOV SI, 2
 MOV DH, 04d
 MOV DL, 22d
 tube_min:
@@ -89,7 +89,7 @@ ADD DL, 4d
 CMP SI, 8
 JL tube_min 
 ;hours lights
-MOV SI, 0
+MOV SI, 3
 MOV DH, 06d
 MOV DL, 22d
 tube_hour:
